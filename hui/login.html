@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="fonts/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="sass/register.css" />
+</head>
+	<body>
+		<header>
+			<i class="fa fa-chevron-left"></i>
+			<p>登录</p>
+			<i class="fa fa-refresh"></i>
+		</header>
+		<div class="content">
+			<div class="ID">
+				<p>账号</p><input type="text" placeholder="请输入用户名长度2-15个字符"/>
+			</div>
+			<div class="password">
+				<p>密码</p><input type="text" placeholder="请输入登录密码长度6-20个字符"/>
+			</div>
+			<div class="iphone">
+				<p>验证码</p>
+				<input type="text" placeholder="请输入手机号"/>
+				<button class="get">6767</button>
+			</div>
+			<div class="red">
+			   <button class="btn">确认登录</button>
+			</div>
+			<div class="txt">
+				<div class="txt_1">
+					<span>忘记密码？</span>
+				</div>
+				<div class="txt_2">
+					<p>立即注册</p>
+				</div>
+			</div>
+            <div class="title">
+            	<p>使用合作网站登录</p>
+            </div>
+            <div class="img">
+            	<img src="img/qq_03.png" alt="" />
+            </div>
+		</div>
+		<ul class="footer">
+			<li><img src="img/footer_03.png" alt="" /><br />首页</li>
+			<li><img src="img/footer_10.png" alt="" /><br />商场返利</li>
+			<li><img src="img/footer_12.png" alt="" /><br />优惠爆料</li>
+			<li><img src="img/footer_05.png" alt="" /><br />超级返利</li>
+			<li><img src="img/footer_07.png" alt="" /><br />我的</li>
+		</ul>
+		<script>
+			(function(win,doc){
+				//浏览器缩放时
+				win.onresize=function(){
+					change();	
+				};
+				change();
+				function change(){
+					var oFs=doc.documentElement.clientWidth/(414/20);
+			
+					//设置根目录字体大小
+					doc.documentElement.style.fontSize=oFs+'px';	
+				}	
+			})(window,document);
+		</script>
+	</body>
+</html>

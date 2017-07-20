@@ -1,0 +1,295 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  background: #F5F5F5; }
+
+header {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  background: rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  position: fixed;
+  top: 0rem;
+  color: white; }
+  header input {
+    width: 70%;
+    height: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    padding-left: 0.3rem; }
+  header h2 {
+    padding-top: 0.3rem;
+    padding-left: 0.3rem; }
+  header .head2 {
+    padding-top: 0.3rem;
+    text-align: center;
+    padding-right: 0.3rem; }
+
+.box {
+  width: 100%;
+  overflow: hidden; }
+
+.banner > li > img {
+  width: 100%;
+  display: none; }
+
+.yuan {
+  position: absolute;
+  left: 41%; }
+
+.yuan > li {
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  float: left;
+  top: -22px;
+  margin: 5px;
+  cursor: pointer; }
+
+.grid {
+  width: 100%;
+  padding-top: 1rem;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .grid li {
+    width: 25%;
+    text-align: center;
+    font-size: 0.6rem;
+    margin-bottom: 1.2rem; }
+    .grid li img {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-bottom: 0.6rem; }
+
+.small {
+  position: relative; }
+  .small div:nth-of-type(1) {
+    position: absolute;
+    left: 10%;
+    top: -87px;
+    padding: 3px 2px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    background: #FF7F00; }
+  .small div:nth-of-type(2) {
+    position: absolute;
+    left: 38%;
+    top: -87px;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    background: #FF7F00; }
+
+.iphones {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin-top: 8px;
+  padding: 20px 0 12px 0;
+  border-bottom: 1px solid #EEEEEE;
+  border-top: 1px solid #EEEEEE; }
+  .iphones .last {
+    border-right: none; }
+  .iphones li {
+    text-align: center;
+    width: calc(100%/3);
+    border-right: 1px solid #EEEEEE; }
+    .iphones li img {
+      width: 3.5rem;
+      height: 2.1rem; }
+    .iphones li p {
+      font-size: 12px; }
+    .iphones li .p1 {
+      color: #e55b4f; }
+    .iphones li .p2 {
+      color: #43bd4d; }
+    .iphones li .p3 {
+      color: #58bce1; }
+
+.tao {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #EEEEEE; }
+  .tao .last {
+    border: none; }
+  .tao li {
+    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+    width: 50%;
+    display: flex;
+    border-right: 1px solid #EDEEEE; }
+    .tao li .tao_1 {
+      width: 65%;
+      padding-left: 0.5rem; }
+      .tao li .tao_1 p:nth-of-type(1) {
+        font-size: 14px;
+        color: lightblue; }
+      .tao li .tao_1 p:nth-of-type(2) {
+        font-size: 11px;
+        color: gray;
+        padding-top: 0.1rem; }
+      .tao li .tao_1 p:nth-of-type(3) {
+        font-size: 14px;
+        color: gray;
+        padding-top: 0.2rem; }
+        .tao li .tao_1 p:nth-of-type(3) span {
+          color: darkred;
+          font-weight: bold; }
+
+.man {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #EEEEEE; }
+  .man li {
+    text-align: center;
+    font-size: 12px;
+    border-right: 1px solid #EEEEEE; }
+    .man li img {
+      width: 78%;
+      padding: 0.7rem 0.5rem 0.1rem 0.8rem; }
+    .man li:nth-of-type(1) {
+      width: 30%; }
+    .man li:nth-of-type(2) {
+      width: 40%; }
+    .man li:nth-of-type(3) {
+      width: 30%; }
+    .man li p {
+      padding-bottom: 0.7rem; }
+
+.duo {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px; }
+  .duo .left {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-botom: 0.5rem;
+    width: 40%; }
+    .duo .left p {
+      line-height: 18px;
+      color: gray; }
+    .duo .left span {
+      color: darkgreen;
+      font-weight: bold; }
+  .duo .right {
+    width: 30%;
+    padding-top: 1rem;
+    padding-right: 0.5rem; }
+    .duo .right h4 {
+      margin-bottom: 0.2rem; }
+    .duo .right p {
+      color: gray;
+      padding-left: 0.5rem;
+      padding-bottom: 0.5rem; }
+  .duo .center {
+    width: 30%; }
+    .duo .center img {
+      width: 100%; }
+
+.today {
+  width: 100%;
+  height: 40px;
+  background: white;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EEEEEE; }
+  .today .today_1 {
+    display: flex;
+    align-items: center; }
+    .today .today_1 span {
+      width: 0.3rem;
+      height: 40px;
+      background: #FF9804; }
+    .today .today_1 p {
+      color: #FF9804;
+      font-size: 16px;
+      padding-left: 0.5rem; }
+  .today .fa-ellipsis-h {
+    padding-right: 0.5rem; }
+
+.list {
+  font-family: "微软雅黑";
+  width: 100%;
+  background: white; }
+  .list li {
+    padding: 14px 0 20px 0;
+    display: flex;
+    border-bottom: 1px solid #EEEEEE; }
+  .list .list_img {
+    width: 30%;
+    padding-left: 0.5rem; }
+  .list .list_txt {
+    width: 70%;
+    padding-left: 0.3rem; }
+    .list .list_txt p {
+      font-size: 12px;
+      color: gray; }
+    .list .list_txt .list_title {
+      color: black;
+      font-size: 13px;
+      font-weight: bold; }
+    .list .list_txt span {
+      font-size: 12px;
+      color: #ff4377; }
+    .list .list_txt .list_ {
+      padding-top: 0.5rem; }
+    .list .list_txt .list_footer {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 0.5rem; }
+      .list .list_txt .list_footer .list_right {
+        padding-right: 0.5rem; }
+
+.xia {
+  width: 100%;
+  height: 2.5rem;
+  background: white;
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px; }
+  .footer li {
+    width: 20%;
+    text-align: center;
+    padding: 0.3rem 0 0.3rem 0; }
+    .footer li img {
+      width: 1.1rem;
+      height: 1.1rem;
+      padding-bottom: 0.1rem; }
+
+/*# sourceMappingURL=come.css.map */
